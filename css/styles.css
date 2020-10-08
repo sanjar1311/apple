@@ -6,7 +6,7 @@
 }
 
 .container{
-  width: 1240px;
+  width: 1230px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -23,8 +23,9 @@ ul{
 .site-header{
   background-image: url("/img/watches.jpg");
   background-repeat: no-repeat;
-  background-position: right -350px  bottom -100px;
-  height: 90vh;
+  background-size: 700px auto;
+  background-position: right -350px  bottom ;
+  height: 95vh;
   border-bottom: 1px solid #999;
 }
 
@@ -32,7 +33,7 @@ ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  margin: 30px 0 200px 0;
 }
 
 .nav-link{
@@ -41,16 +42,13 @@ ul{
   margin-right: 5px;
 }
 
-.list-item{
-}
-
 .nav-link::after{
   position: absolute;
   content: "";
   display: block;
   height: 5px;
   width: 100%;
-  bottom: 0;
+  bottom: -7px;
   left: 0;
   background-color: transparent;
   transition: background-color 0.7s ease;
@@ -61,8 +59,137 @@ ul{
 }
 
 .search-input{
-  padding: 5px;
+  padding-bottom: 12px;
   border: none;
   border-bottom: 1px solid #999;
   outline: none;
+}
+
+
+      /* DEMO SECTION */
+
+
+.demo-title{
+  width: 70%;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.demo-text{
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #777;
+  width: 55%;
+  padding-left: 35px;
+  border-left: 1px solid #777;
+  margin-bottom: 60px;
+}
+
+.demo-link{
+  padding: 15px 35px;
+  background-color: #fd5667;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.demo-link:hover{
+  background-color: #FF7577;
+}
+
+
+          /* SITE MAIN */
+
+
+.main{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-box{
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+.center{
+  margin: 0 50px;
+}
+
+.main-box-title{
+  color: #333;
+  padding: 50px 0;
+}
+
+.main-box-text{
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.main-box span{
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  color: #777;
+}
+
+.main-box-link{
+  margin-left: 50px;
+  color: #fd5667;
+  position: relative;
+}
+
+.main-box-link::before{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  left: -40px;
+  top: 40%;
+  background-color: #fd5667;
+  width: 35px;
+  transition: width 0.5s;
+}
+
+.main-box::before:hover{
+  width: 45px;
+}
+
+.main-center{
+  display: flex;
+  align-items: center;
+}
+
+.main-img{
+  padding: 0;
+  margin: 0;
+}
+
+.main-center-text{
+  width: 80%;
+}
+
+
+      /* FOOTER */
+
+.site-footer{
+  margin-top: 100px;
+  height: 100vh;
+  background-image: url("/img/runners.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.white{
+  color: #fff;
+}
+
+.footer{
+  position: absolute;
+  left: 50%;
+  top: 30%;
 }
