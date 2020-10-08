@@ -1,0 +1,68 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container{
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
+}
+
+ul{
+  list-style: none;
+}
+
+.site-header{
+  background-image: url("/img/watches.jpg");
+  background-repeat: no-repeat;
+  background-position: right -350px  bottom -100px;
+  height: 90vh;
+  border-bottom: 1px solid #999;
+}
+
+.site-navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.nav-link{
+  padding: 10px 25px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.list-item{
+}
+
+.nav-link::after{
+  position: absolute;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  transition: background-color 0.7s ease;
+}
+
+.nav-link:hover::after{
+  background-color: #222;
+}
+
+.search-input{
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+}
