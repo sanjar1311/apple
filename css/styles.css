@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .container{
   width: 1230px;
   margin: 0 auto;
@@ -24,7 +28,7 @@ ul{
   background-image: url("/img/watches.jpg");
   background-repeat: no-repeat;
   background-size: 700px auto;
-  background-position: right -350px  bottom ;
+  background-position: left 1550px  center;
   height: 95vh;
   border-bottom: 1px solid #999;
 }
